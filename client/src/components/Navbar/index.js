@@ -10,7 +10,7 @@ function Navbar() {
   const location = useLocation();
 
   useEffect(function () {
-    if (location.pathname === "/search") {
+    if (location.pathname === "/search" || location.pathname === "/") {
       setSavedRouteActive(false);
       setSearchRouteActive(true);
     } else if (location.pathname === "/saved") {
